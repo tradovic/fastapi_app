@@ -106,7 +106,7 @@ To build our image, the Docker daemon needs a few pieces of information. For one
 ```
 docker image build --file custom-docker-file-name --tag <my-app-image>
 ```
-Docker also needs the build context. The build context is the directory that’s accessible to Docker during the build process. In our case, we specified the current working directory as the build context with ..
+Docker also needs the build context. The build context is the directory that’s accessible to Docker during the build process. In our case, we specified the current working directory as the build context with <code>.</code>.
 
 If the image build was successful, you should get an output similar to the image below:
 ![png](assets/img/image.png)
@@ -115,7 +115,7 @@ At this point, you should have an image called <code><my-app-image></code> on yo
 
 ### Running the container from our Docker image
 
-Run the command below to spin up a container from our <my-app-image>:
+Run the command below to spin up a container from our <code><my-app-image></code>:
 ```
 docker container run --publish 80:80 --name fastapi-app-container <my-app-image>
 ```
