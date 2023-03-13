@@ -1,16 +1,13 @@
 ## Setting up our development environment
 
-
 create a virtual environment
 ```
 python3 -m venv <env-name>
 ```
-
 activate the virtual environment, run 
 ```
 source <env-name>/bin/activate
 ```
-
 In the directory where you want to start your project, run 
 ```
 mkdir <my_app>
@@ -23,7 +20,6 @@ Install FastApi
 ```
 pip install fastapi
 ```
-
 
 install uvicorn if it is needed
 ```
@@ -52,6 +48,9 @@ INFO:     127.0.0.1:54760 - "GET / HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54761 - "GET /docs HTTP/1.1" 200 OK
 INFO:     127.0.0.1:54761 - "GET /openapi.json HTTP/1.1" 200 OK
 ```
-Point your browser to [http://127.0.0.1:8000](<http://127.0.0.1:8000/)/docs. You should see the two endpoints we just added documented:
+Point your browser to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs). You should see the two endpoints we just added documented:
 
 ![png](assets/img/demo.png)
+
+Now, we have a basic FastAPI application.
+
